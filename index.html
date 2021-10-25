@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> Assignment 2</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        </head>
+        <body>
+            <div>
+        
+                <h2> <center><button><a href="min_max.html"><big><b><p style="color:black;"> Min Max Converter</big></b></p></a></button></center></h2>
+         
+       </div>
+       <br><br>
+      <center> <button onclick="location.reload();"><p style="color:red;text-align: center;" >
+        Didn't like the quote?Click here for it.Good luck!!!
+        </p>
+    </button>
+</center>
+  
+  <div   class="quoteline" id="quote" style="font-size: 500; ">
+  
+  </div>
+  <br><br><br><br>
+
+
+  
+  <table class="table1">
+    
+  <tr>
+      
+  <th class="color1 " onclick="changeColor('darkgreen')"></th>
+  <th class="color2" onclick="changeColor('yellow')"></th>
+
+  </tr>
+  <tr>
+  <th class="color3" onclick="changeColor('deepskyblue')"></th>
+  <th class="color4" onclick="changeColor('orange')"></th>
+  </tr>
+<h4></h4><P><center><b>click on any color box and see the change of color in quote background !!!!!</center></b></P></h4>
+
+  </table>
+
+  
+   
+</div>
+
+
+
+  <h7> <center><button><a href="hero.html"><big><b><p style="color:black;">Hero Converter</big></b></p></a></center></button></h7>
+
+
+  <h6> <center><button><a href="magic.html"><big><b><p style="color:black;">MAGIC BOX</big></b></p></a></center></button></h6>
+
+
+
+
+
+  <script>
+
+    var fortune = [
+  "A person who never made a mistake never tried anything new. ",
+  "True wisdom comes not from knowledge, but from understanding.",
+  "Victory is not always winning the battle...but rising every time you fall."
+  ]
+  function newQuote(){
+  var randomNumber = Math.floor(Math.random() * (fortune.length));
+  document.getElementById('quote').innerHTML = fortune[randomNumber];
+  }
+  newQuote();
+  
+  changeColor = function(colorC){
+  if(colorC == 'darkgreen'){
+  document.getElementById("quote").style.backgroundColor = colorC;
+  document.getElementById("quote").style.borderColor = "white";
+  document.getElementById("quote").style.color = "white";
+  }
+  else if(colorC == 'yellow'){
+  document.getElementById("quote").style.backgroundColor = colorC;
+  document.getElementById("quote").style.borderColor = "blue";
+  document.getElementById("quote").style.color = "black";
+  }
+  else if(colorC == 'deepskyblue'){
+  document.getElementById("quote").style.backgroundColor = colorC;
+  document.getElementById("quote").style.borderColor = "green";
+  document.getElementById("quote").style.color = "white";
+  }
+  else if(colorC == 'orange'){
+  document.getElementById("quote").style.backgroundColor = colorC;
+  document.getElementById("quote").style.borderColor = "red";
+  document.getElementById("quote").style.color = "black";
+  }
+  
+  }
+
+
+
+
+   </script>
+
+
+        </body>
+
+
+
+
+
+
+</html>
